@@ -8,27 +8,27 @@
       <h1>{{ msg }}</h1>    
     </div>
     <div class="buttonBar">
-      <div class="navButtonContainer">
-        <a href="" class="nav-link">Home</a>
+      <div class="navContainer">
+        <a href="" class="nav-link-standard">Home</a>
       </div>
-      <div class="navButtonContainer">
-        <a href="" class="nav-link">Meet Us</a>
+      <div class="navContainer">
+        <a href="" class="nav-link-standard">Meet Us</a>
       </div>
-      <div class="navButtonContainer">
-        <a href="" class="nav-link">Services</a>
+      <div class="navContainer">
+        <a href="" class="nav-link-standard">Services</a>
       </div>
-      <div class="navButtonContainer">
-        <a href="" class="nav-link">Contact Us</a>
+      <div class="navContainer">
+        <a href="" class="nav-link-standard">Contact Us</a>
       </div>
-      <div class="navButtonContainer">
-        <a href="" class="nav-link">COVID-19</a>
+      <div class="navContainer">
+        <a href="" class="nav-link-standard">COVID-19</a>
       </div>
     </div>
-    <div class="callBtn">
+    <div class="navContainer">
       (+61) 411 483 530
     </div>
-    <div class="bookAppointmentBtn">
-      Make Appointment
+    <div class="navFocusContainer">
+      <a href="" class="nav-link-focus" target="_blank"> Make Appointment </a>
     </div>
   </div>
 </div>
@@ -45,26 +45,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 .nav {
   width: 100vw;
   /* height: 10vh; */
   position: fixed;
   background-color: var(--firstColor);
   color:var(--secondColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 }
 .header {
@@ -78,12 +68,17 @@ a {
   justify-content: center;
   align-items: center;
 }
-.navButtonContainer {
+.navContainer {
   padding: 5px;
 }
 
-.nav-link{
+.nav-link-standard{
   color:var(--navActive);
+  text-decoration: none;
+}
+
+.nav-link-focus{
+  color:var(--navActiveFocus);
   text-decoration: none;
 }
 
@@ -100,14 +95,21 @@ a {
   font-weight: 600;
 }
 
-.bookAppointmentBtn {
+.navFocusContainer {
   display: inline-block;
   font-weight: 600;
   text-align: center;
   vertical-align: middle;
   background-color: var(--secondColor);
   color:var(--firstColor);
-  padding: 5px;
+  padding: 10px;
   border-radius: .25rem;
+}
+
+.navFocusContainer > a:hover {
+  color: #fff;
+}
+.navContainer > a:hover {
+  color: #fff;
 }
 </style>

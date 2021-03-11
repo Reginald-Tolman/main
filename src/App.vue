@@ -23,8 +23,9 @@ export default {
   --thirdColor:#A8DADC;
   --forthColor:#457B9D;
   --fifthColor:#1D3557;
-  --navActive:#ffffff;
+  --navActive:#a7b7c7;
   --navInactive:#677788;
+  --navActiveFocus: var(--firstColor);
 }
 
 #app {
