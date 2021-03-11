@@ -12,7 +12,7 @@
         <a href="" class="nav-link-standard">Home</a>
       </div>
       <div class="navContainer">
-        <a href="" class="nav-link-standard">Meet Us</a>
+        <a href="" class="nav-link-standard">Lets Go</a>
       </div>
       <div class="navContainer">
         <a href="" class="nav-link-standard">Services</a>
